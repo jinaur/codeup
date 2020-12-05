@@ -1,12 +1,14 @@
 n = int(input())
 
-def reverse(n):
-    if n == 1:
-        return print(n)
-    elif n%2:
-        reverse(3*n+1)
+def reverse(answer):
+    if answer == 1:
+        return print(answer)
+    elif answer%2:
+        reverse(3*answer+1)
     else: 
-        reverse(n//2)
-    return print(n)
+        reverse(answer//2)
+    return print(answer)
 
-r = reverse(n)
+
+answer = n
+r = reverse(answer)

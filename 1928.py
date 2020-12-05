@@ -8,11 +8,11 @@ def my_func(n) :
         answer = (answer * 3) + 1
         print(answer)
         return my_func(answer)
-    elif answer%2 == 0 :
+    else :
         answer = answer // 2
         print(answer)
         return my_func(answer)
     
 print(n)
-     
+
 r = my_func(n)

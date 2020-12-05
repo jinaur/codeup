@@ -1,12 +1,11 @@
 a, b = map(int, input().split())
 
-def myfunc(a, b) :
-    if a%2 == 1 :
+def my_func(a, b) :
+    if a % 2 == 1 :
         print(a, end=" ")
     if a >= b :
-        return
-    myfunc(a+1, b)
-    return
+            return 0
 
+    return my_func(a+1, b)
 
-myfunc(a, b)
+r = my_func(a, b)
