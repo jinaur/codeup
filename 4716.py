@@ -12,4 +12,3 @@ def my_func(max) :
 
 max = 0
 r = my_func(max)
-
