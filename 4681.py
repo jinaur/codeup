@@ -8,4 +8,3 @@ for i in range(0, len(a)) :
 r = r % 10
 
 print(r)
-
