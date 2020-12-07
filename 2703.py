@@ -1,14 +1,15 @@
 n = int(input())
 a = list(map(int, input().split()))
 
-UP_count = 0
-DOWN_count = 0
+u_count = 0
+d_count = 0
 
 for i in range(1, n) :
     if a[i-1] < a[i] :
-        UP_count += 1
+        u_count += 1
     elif a[i-1] > a[i] :
-        DOWN_count += 1
+        d_count += 1
 
-print(UP_count, DOWN_count)
+print(u_count, d_count)
+
 
