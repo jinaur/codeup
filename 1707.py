@@ -18,3 +18,4 @@ for i in range(0, len(a)) :
 
 print(r)
 print(aa_count, ba_count)
+
