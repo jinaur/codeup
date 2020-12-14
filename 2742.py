@@ -11,3 +11,4 @@ a[n//2] = r
 for i in range(0, n) :
     print(a[i], end=" ")
 
+
