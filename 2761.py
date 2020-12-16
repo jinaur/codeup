@@ -6,3 +6,4 @@ l.append(a*b)
 l.sort()
 
 print(l[1])
+
