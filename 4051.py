@@ -1,28 +1,18 @@
 count = 0
-r = 0
-e = 0
 
-for i in range(0, 5):
-    a, b = map(float, input().split())
-    if b - a >= 4 :
+for i in range(0, 5) :
+    a, b = list(map(float, input().split()))
+    if b-a-1 >= 5 :
         count += 4
+    elif b-a-1 <= 0 :
+        continue
     else :
-        count += b - a
+        count += b-a-1
 
-count -= 5
-if count <= 5 :
-    e = True
-elif count >= 15 :
-    e = 1
+m = count * 10000
+if count >= 15 :
+    m -= m*0.05
+elif count <= 5 :
+    m += m*0.05
 
-for i in range(0, int(count*2)) :
-    if count >= 0.5 :
-        count -= 0.5
-        r += 5000
-
-if e == True :
-    r += r * 0.05
-elif e == 1 :
-    r -= r * 0.05
-
-print(int(r))
+print(int(m))
