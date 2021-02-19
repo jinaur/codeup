@@ -5,6 +5,7 @@
 # 배 3, 등 1 = 걸 | C 
 # 배 4, 등 0 = 윷 | D
 # 배 0, 등 4 = 모 | E
+
 l = ['E', 'A', 'B', 'C', 'D']
 for i in range(0, 3) :
     a = list(map(int, input().split()))
