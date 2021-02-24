@@ -8,4 +8,5 @@ for i in range(0, 10) :
     if max > MAX :
         MAX = max
 
-print(MAX) 
+print(MAX)
+
