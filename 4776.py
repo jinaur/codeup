@@ -1,21 +1,9 @@
 n = int(input())
 
-while True :
-    if n <= 60 :
-        break
-    n -= 60
+n = n%60
 
-a = 0
-b = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
-b_count = 0
-r = ""
+a = [7, 8, 9, 0, 1, 2, 3, 4, 5, 6]
+b = ["J", "K", "L", "A", "B", "C", "D", "E", "F", "G", "H", "I", ]
 
-for i in range(0, n) :
-    if a >= 10 :
-        a = -1
-    if b[i-b_count] == "L" :
-        b_count += 11   
-    a += 1
-    r = b[i-b_count]
+print(b[n%12-1] + str(a[n%10-1]))
 
-print(str(r) + str(a))
