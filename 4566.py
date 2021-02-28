@@ -1,16 +1,17 @@
 n = int(input())
 m = int(input())
+
 l = []
-min = 10000000
-
-count = 0
 for i in range(n, m+1) :
-    for j in range(n, i) :
+    r = True
+    if i < 2 :
+        r = False
+    for j in range(2, i) :
         if i%j == 0 :
-            l.append(i)
-        if i < min :
-            min = i
+            r = False
+    if r == True :
+        l.append(i)
+    
+print(sum(l))
+print(min(l))
 
-Sum = sum(l)
-print(Sum)
-print(min)
