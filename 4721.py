@@ -1,5 +1,24 @@
 n = int(input())
 
+# def my_func(N) :
+#     count = 0
+#     count1 = 0
+#     count2 = 0
+#     count3 = 0
+
+#     if N == 3 :
+#         count += 3
+#         count3 += 1
+#         return (count, count3)
+#     elif N == 2 :
+#         count += 2
+#         count2 += 1
+#         return (count, count2)
+#     else :
+#         count += 1
+#         count1 += 1
+#         return (count, count1)
+
 a_count = 0
 a_count1 = 0
 a_count2 = 0
