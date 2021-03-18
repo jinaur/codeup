@@ -1,3 +1,5 @@
+from collections import Counter
+
 l = []
 
 r = 0
@@ -6,6 +8,8 @@ for i in range(0, 10) :
     l.append(n)
     r += n
 
+c = Counter(l)
 r = r // 10
 print(r)
-print(l[4])
+print(c.most_common(1)[0][0])
+
