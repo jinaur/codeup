@@ -1,4 +1,7 @@
 n = float(input())
 
-print(abs(n))
+if int(n) == float(n) :
+    print(abs(int(n)))
+else :
+    print(abs(n))
 
